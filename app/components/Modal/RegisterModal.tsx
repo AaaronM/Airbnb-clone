@@ -7,4 +7,3 @@ const RegisteredModal = () => {
 };
 
 export default RegisteredModal;
-ç;
