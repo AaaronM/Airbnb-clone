@@ -1,3 +1,5 @@
+import CleientOnly from "./components/ClientOnly";
+import RegisteredModal from "./components/Modal/RegisterModal";
 import Navbar from "./components/Navbar/Navbar";
 // __________NAVBAR__________
 import "./globals.css";
@@ -20,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <Navbar />
+        <CleientOnly>
+          <RegisteredModal />
+          <Navbar />
+        </CleientOnly>
         {children}
       </body>
     </html>
